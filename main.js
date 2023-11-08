@@ -64,4 +64,31 @@ function init() {
 		style: cheonanCitiesStyle
 	})
 	map.addLayer(cheonanCitiesLayer)
+
+	// Map Features Click Logic
+	const navElements = document.querySelector('.column-navigation');
+	const cityNameElement = document.getElementById('cityname');
+	const cityImageElement = document.getElementById('cityimage');
+	const mapView = map.getView();
+
+	map.on('singleclick', function(evt){
+		map.forEachFeatureAtPixel(evt.pixel, function(feature, layer){
+			let featureName = feature.get('cityname')
+			let navElement = navElements.children.namedItem(featureName);
+			
+			mainLogic(feature, navElement)
+		})
+	})
+
+	function mainLogic(feature, clickedAnchorElement){
+		// Re-assign active class to the clicked element
+		let currentActiveStyledElement = document.querySelector('.active');
+		currentActiveStyledElement.className = currentActiveStyledElement.className.replace('active', '');
+		clickedAnchorElement.className = 'active';
+
+		// change the view based on the feature
+		let featureCoordinates = feature.get('geometry').getCoordinates();
+		mapView.animate({center: featureCoordinates}, {zoom: 17})
+		
+	}
 }

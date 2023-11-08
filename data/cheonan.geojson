@@ -1,1 +1,56 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"node_id":3020185201,"placename":"엠디빌딩앞","link_id":0},"geometry":{"coordinates":[127.13503467970628,36.855969100689805],"type":"Point"}},{"type":"Feature","properties":{"node_id":3020078900,"placename":"천안공단산업계량소앞","link_id":0},"geometry":{"coordinates":[127.12564583896301,36.851254559324076],"type":"Point"},"id":1},{"type":"Feature","properties":{"node_id":3020070600,"placename":"공단사거리","link_id":0},"geometry":{"coordinates":[127.12222279291962,36.845533150181765],"type":"Point"},"id":2},{"type":"Feature","properties":{"node_id":3020069200,"placename":"성성2교차로","link_id":0},"geometry":{"coordinates":[127.12168449132423,36.84449485629344],"type":"Point"},"id":3},{"type":"Feature","properties":{"node_id":0,"link_id":3020411300,"placename":"천안공단산업계량소앞 - 공단사거리"},"geometry":{"coordinates":[[127.12547320860926,36.85118364553776],[127.12456895313045,36.850318180348225],[127.12238810167821,36.84614678448344]],"type":"LineString"}},{"type":"Feature","properties":{"link_id":3020543501,"placename":"엠디빌딩앞 - 천안공단산업계량소앞","node_id":0},"geometry":{"coordinates":[[127.12602285888676,36.85172277977736],[127.12721080235968,36.85261660428627],[127.12939165381181,36.85363810521288],[127.13476399519232,36.85595061937853]],"type":"LineString"}},{"type":"Feature","properties":{"link_id":3020410700,"placename":"공단사거리 - 성성2교차로","node_id":0},"geometry":{"coordinates":[[127.12209513881749,36.84549159114742],[127.12162577069978,36.84467055344635]],"type":"LineString"}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": 3020185201,
+        "cityname": "place_1",
+        "link_id": 0
+      },
+      "geometry": {
+        "coordinates": [127.13503467970628, 36.855969100689805],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": 3020078900,
+        "cityname": "place_2",
+        "link_id": 0
+      },
+      "geometry": {
+        "coordinates": [127.12564583896301, 36.851254559324076],
+        "type": "Point"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": 3020070600,
+        "cityname": "place_3",
+        "link_id": 0
+      },
+      "geometry": {
+        "coordinates": [127.12222279291962, 36.845533150181765],
+        "type": "Point"
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": 3020069200,
+        "cityname": "place_4",
+        "link_id": 0
+      },
+      "geometry": {
+        "coordinates": [127.12168449132423, 36.84449485629344],
+        "type": "Point"
+      },
+      "id": 3
+    }
+  ]
+}
