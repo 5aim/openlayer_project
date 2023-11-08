@@ -82,3 +82,8 @@ body{
     height: 60%;
     border-radius: 10px;
 }
+
+#popover-text{
+    background-color: rgba(150, 150, 150, 0.7);
+    font-size: 18px;
+}
