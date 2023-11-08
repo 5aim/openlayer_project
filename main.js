@@ -55,6 +55,38 @@ function init() {
 		]
 		return Styles
 	}
+
+	const StyleForSelect = function(feature){
+		let nodeId = feature.get('node_id');
+		let nodeIdString = nodeId.toString();
+		let placename = feature.get('placename');
+		const Styles = [
+			new ol.style.Style({
+				image: new ol.style.Circle({
+					fill: new ol.style.Fill({
+						color: [247, 40, 10, 0.7]
+					}),
+					stroke: new ol.style.Stroke({
+						color: [6, 125, 34, 1],
+						width: 1
+					}),
+					radius: 12
+				}),
+				text: new ol.style.Text({
+					text: nodeIdString,
+					scale: 1.5,
+					fill: new ol.style.Fill({
+						color: [0, 0, 0, 1]
+					}),
+					stroke: new ol.style.Stroke({
+						color: [232, 26, 26, 1],
+						width: 0.3
+					})
+				}),
+			})
+		]
+		return Styles
+	}
 	
 	const cheonanCitiesLayer = new ol.layer.Vector({
 		source: new ol.source.Vector({
@@ -90,5 +122,15 @@ function init() {
 		let featureCoordinates = feature.get('geometry').getCoordinates();
 		mapView.animate({center: featureCoordinates}, {zoom: 17})
 		
+		let aussieCitiesFeatures = cheonanCitiesLayer.getSource().getFeatures();
+		aussieCitiesFeatures.forEach(function(feature){
+			feature.setStyle(cheonanCitiesStyle);
+		})
+		feature.setStyle(StyleForSelect)
+
+		let featureName = feature.get('cityname');
+		let featureImage = feature.get('cityimage');
+		cityNameElement.innerHTML = 'Name is : ' + featureName
+		cityImageElement.setAttribute('src', './data/image/' + featureImage + '.jpg')
 	}
 }

@@ -6,7 +6,7 @@
       "properties": {
         "node_id": 3020185201,
         "cityname": "place_1",
-        "link_id": 0
+        "cityimage": "place_1"
       },
       "geometry": {
         "coordinates": [127.13503467970628, 36.855969100689805],
@@ -18,7 +18,7 @@
       "properties": {
         "node_id": 3020078900,
         "cityname": "place_2",
-        "link_id": 0
+        "cityimage": "place_2"
       },
       "geometry": {
         "coordinates": [127.12564583896301, 36.851254559324076],
@@ -31,7 +31,7 @@
       "properties": {
         "node_id": 3020070600,
         "cityname": "place_3",
-        "link_id": 0
+        "cityimage": "place_3"
       },
       "geometry": {
         "coordinates": [127.12222279291962, 36.845533150181765],
@@ -44,7 +44,7 @@
       "properties": {
         "node_id": 3020069200,
         "cityname": "place_4",
-        "link_id": 0
+        "cityimage": "place_4"
       },
       "geometry": {
         "coordinates": [127.12168449132423, 36.84449485629344],
