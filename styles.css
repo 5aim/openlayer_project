@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0px;
+    overflow: auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 4vw 50vw 46vw;
+    grid-template-rows: 100vh;
+}
+
+/* Columns */
+.grid-1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(150, 150, 150, 0.8);
+}
+
+.place_icon{
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.grid-2{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-3{
+    height: 100%;
+    width: 100%;
+}
+
+.column-navigation{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: rgba(250, 250, 250, 1);
+    font-size: 15px;
+}
+
+.column-navigation a:hover{
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.active{
+    background-color: rgba(250, 0, 0, 1);
+}
+
+.column-menu{
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+/* map */
+#openlayers-map{
+    width: 100%;
+    height: 100%;
+}
+
+/* image */
+#cityname{
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 28px;
+}
+
+#cityimage{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}

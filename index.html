@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./libs/v6.1.1-dist/ol.css">
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="column-navigation">
+                <p><a href="#" title="Home" id="Home" class="active place_icon">&#127968;</a></p>
+                <p><a class="place_icon" href="#" title="node_3020185201" id="node_3020185201">&#9205;</a></p>
+                <p><a class="place_icon" href="#" title="node_3020078900" id="node_3020078900">&#9205;</a></p>
+                <p><a class="place_icon" href="#" title="node_3020070600" id="node_3020070600">&#9205;</a></p>
+                <p><a class="place_icon" href="#" title="node_3020069200" id="node_3020069200">&#9205;</a></p>
+                <p><a class="place_icon" href="#" title="link_3020411300" id="link_3020411300">&#9205;</a></p>
+                <p><a class="place_icon" href="#" title="link_3020543501" id="link_3020543501">&#9205;</a></p>
+                <p><a class="place_icon" href="#" title="link_3020410700" id="link_3020410700">&#9205;</a></p>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="column-map" id="openlayers-map"></div>
+        </div>
+
+        <div class="grid-3">
+            <div class="column-menu" id="menu-information">
+                <p id="cityname">Choenan</p>
+                <img id="cityimage" src="./data/image/arario_gallery.jpg" alt="cheonan-city image">
+            </div>
+        </div>
+    </div>
+
+    <script src="./libs/v6.1.1-dist/ol.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
